@@ -13,7 +13,11 @@ while(true) {
     else if (+userGuess === n) {
         alert('Вы угадали!');
         break;
-    } else {
-        alert('Вы не угадали!');
+    } 
+    else if (+userGuess < n) {
+        alert('Больше');
+    } 
+    else if (+userGuess > n) {
+        alert('Меньше');
     }
 }
